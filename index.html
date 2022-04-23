@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
+    <title>Shows site app</title>
+<script defer src="main.js"></script></head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#" id="refresh">
+                <img id="imgLogo" src="." alt="movie logo">
+            </a>
+        </div>
+        <nav>
+            <a href="#" class="showCounter">
+                <p>Movies</p>
+                <p id="count"></p>
+            </a>
+            <a href="#">Gender</a>
+            <a href="#">Year</a>
+        </nav>
+    </header>
+    <div class="container" id="container"></div>
+    <div class="module" id="module">
+        <div class="modal">
+            <div class="close">
+                <button class="close-button">&times;</button>
+            </div>
+            <div class="data">
+                <div class="imgContainer">
+                    <img class="modal-image" src=".">
+                </div>
+                <div class="information">
+                    <h3 class="cardName"></h3>
+                    <div class="details">
+                        <div class="genres"></div>
+                        <div class="languages"></div>
+                        <p class="cardSummary"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="commentContainer">
+                <div class="theCounter">
+                    <div>Comments: </div>
+                    <div id="commentCount">0</div>
+                </div>
+                <ul class="postComment"></ul>
+            </div>
+            <form class="addComment">
+                <input type="text" id="text" placeholder="your name">
+                <textarea id="textarea" placeholder="your insights"></textarea>
+                <button class="submit" type="submit">Comment</button>
+            </form>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <footer>
+        <p>Created by @zkr024</p>
+    </footer>
+</body>
+
+</html>
